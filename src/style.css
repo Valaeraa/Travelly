@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -65,6 +66,9 @@ button:hover {
 .main-head {
   background: #131c27;
   color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
 }
 
 nav {
@@ -222,6 +226,83 @@ nav ul {
   background: #27394e;
 }
 
+/* Contact Section */
+
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("./img/contact-mountain.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.8);
+  width: 60%;
+  color: white;
+  border-radius: 10px;
+}
+
+.form-wrapper label {
+  margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.form-wrapper input {
+  padding: 0.5rem 1rem;
+}
+
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+
+.name-form,
+.email-form {
+  padding: 3rem;
+  text-align: center;
+}
+
+/* Footer Section */
+
+footer {
+  color: white;
+  background: rgba(19, 28, 39, 1);
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+footer h5 {
+  flex: 1 1 40rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Media Query */
 
 @media (max-width: 932px) {
@@ -254,5 +335,17 @@ nav ul {
   .locations-head h3 {
     background: rgba(19, 28, 39, 0.9);
     -webkit-text-fill-color: white;
+  }
+
+  .form-wrapper {
+    width: 90%;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer h5 {
+    padding-bottom: 3rem;
   }
 }
