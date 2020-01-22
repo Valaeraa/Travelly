@@ -61,6 +61,11 @@ button:hover {
   background: #27394e;
 }
 
+button:focus {
+  background: #27394e;
+  outline-style: solid;
+}
+
 /* Nav Section With HERO */
 
 .main-head {
